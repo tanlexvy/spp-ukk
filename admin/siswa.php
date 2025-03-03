@@ -501,7 +501,7 @@ if (($_SESSION["peran"] == 'siswa')) {
                           <td><?php echo $row['email']; ?></td>
                           <td>
                             <img src="<?php echo $row['foto_siswa']; ?>" width="70px" height="70px">
-                          </td>
+                          </td> 
                           <td>
                             <a class="btn btn-sm btn-warning" href="" data-bs-toggle="modal" data-bs-target="#siswaeditModal<?php echo $row['id_siswa']; ?>"><i class="mdi mdi-pencil"></i></a>
                             <a class="btn btn-sm btn-danger" href="hapussiswa.php?id=<?php echo $row['id_siswa']; ?>"><i class="mdi mdi-delete"></i></a>
@@ -793,4 +793,4 @@ if (($_SESSION["peran"] == 'siswa')) {
       });
     </script>
   </body>
-</html>
+</html>   

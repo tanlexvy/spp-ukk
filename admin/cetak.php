@@ -8,7 +8,6 @@ $tahun = $_GET['tahun'];
 // Query untuk mengambil data dari database
 $data1 = "SELECT * FROM tb_spp, tb_siswa, tb_ta WHERE id_siswa=siswa_id AND id_ta=ta_id AND id_ta=taid AND ta_id='$tahun' AND taid='$tahun'";
 $result = mysqli_query($koneksi, $data1);
-
 // Buat file HTML dengan header dan layout yang lebih baik
 $filename = "laporan_spp.doc"; // Nama file yang akan diunduh
 $header = "

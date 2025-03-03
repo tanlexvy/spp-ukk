@@ -662,7 +662,9 @@ include 'koneksi.php';
                           <td>
                             <?php if ($status == 1) { ?>
                               <span class="badge bg-success">Sudah Bayar</span>
-                            <?php } ?>
+                            <?php } elseif ($status == 2) { ?>
+                              <span class="badge bg-warning">pending</span>
+                              <?php }?>
                           </td>
                           <td>
                             <a class="btn btn-sm btn-danger" href="kwintasi.php?nisn=<?php echo $id_siswa; ?>&idspp=<?php echo $row['id_spp']; ?>" target="_blank"><i class="mdi mdi-printer"></i></a>

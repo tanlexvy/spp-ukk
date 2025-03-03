@@ -1,8 +1,9 @@
 <?php 
+
 include 'admin/koneksi.php';
-?>
-<?php 
- include 'admin/koneksi.php'
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@ include 'admin/koneksi.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Register Page</title>
     <style>
         /* Reset CSS untuk menghilangkan margin dan padding default */
         * {
@@ -121,13 +122,14 @@ include 'admin/koneksi.php';
 
     <div class="login-container">
         <h2>Selamat Datang</h2>
-        <form action="proses_login.php" method="POST">
+        <form action="" method="POST">
             <input type="text" id="userName" name="username"  placeholder="Username" required>
+            <input type="text" id="Name" name="Name"  placeholder="Name" required>
             <input type="password" id="password" name="password"  placeholder="Password" required>
             <button type="submit">Masuk</button>
         </form>
         <div class="links">
-            <a href="#">Lupa Password?</a> | <a href="register.php">Daftar</a>
+            <a href="#">Lupa Password?</a> | <a href="login.php">Login</a>
         </div>
     </div>
 
